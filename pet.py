@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     # Ruta al archivo CSV de mascotas
     print("Leyendo dataset de mascotas ...")
-    path_pets = "pets.csv"
+    path_pets = "dataset.csv"
     
     # Lee el archivo CSV, especificando que la primera fila tiene los encabezados y usa inferencia de tipos
     df_pets = spark.read.csv(path_pets, header=True, inferSchema=True)
